@@ -34,7 +34,7 @@ const works = [
 export function BlurFadeDemo() {
   return (
     <section id="photos">
-      <div className="grid md:grid-cols-2 gap-8 mt-10 justify-items-center">
+      <div className="grid md:grid-cols-3 gap-8 mt-10 justify-items-center">
         {works.map(({ imageUrl, title, link }, idx) => (
           <BlurFade
             key={title}

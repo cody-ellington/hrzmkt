@@ -115,11 +115,11 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-x-4">
-          <a href="tel:519400200" className="hidden lg:flex">
+          {/* <a href="tel:519400200" className="hidden lg:flex">
             <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
               (519)-400-200
             </button>
-          </a>
+          </a> */}
 
           <Link
             href={"/meeting"}

@@ -11,7 +11,7 @@ export function AnimatedShinyTextDemo() {
           "group rounded-full text-base text-white transition-all ease-in",
         )}
       >
-        <AnimatedShinyText className=" 
+        {/* <AnimatedShinyText className=" 
         items-center 
         justify-center 
          py-1 transition ease-out
@@ -32,7 +32,7 @@ export function AnimatedShinyTextDemo() {
             </span>
           </div>
           </div>
-        </AnimatedShinyText>
+        </AnimatedShinyText> */}
       </div>
     </div>
   );
