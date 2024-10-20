@@ -4,28 +4,34 @@ import Link from "next/link";
 
 const works = [
   {
-    background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Rubbish Brothers",
-    link: "https://www.rubbishbrothers.com",
+    background: "bg-gray-100",
+    imageUrl: "/images/shopify1.webp",
+    title: "F&B - Expanse",
+    link: "https://themes.shopify.com/themes/expanse/styles/contemporary/preview",
   },
   {
-    background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Atlas Massage",
-    link: "https://www.atlasmassage.ca",
+    background: "bg-gray-100",
+    imageUrl: "/images/shopify2.webp",
+    title: "F&B - Combine",
+    link: "https://themes.shopify.com/themes/combine/styles/restaurant/preview",
   },
   {
-    background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Canadian Security Solutions",
-    link: "https://www.canadiansecuritysolutions.com",
+    background: "bg-gray-100",
+    imageUrl: "/images/shopify3.webp",
+    title: "F&B - Flow",
+    link: "https://themes.shopify.com/themes/flow/styles/nourish/preview",
   },
   {
-    background: "bg-gray-200",
-    imageUrl: "/images/business.webp",
-    title: "Flight 9",
-    link: "https://www.flight9.art",
+    background: "bg-gray-100",
+    imageUrl: "/images/shopify4.webp",
+    title: "F&B - Modular",
+    link: "https://themes.shopify.com/themes/modular/styles/mayfair/preview",
+  },
+  {
+    background: "bg-gray-100",
+    imageUrl: "/images/shopify5.webp",
+    title: "F&B - Viola",
+    link: "https://themes.shopify.com/themes/viola/styles/pure/preview",
   },
 
 

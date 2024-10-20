@@ -130,7 +130,7 @@ export default function Home() {
           </a> */}
 
           <Link
-            href={"/meeting"}
+            href={"#contact-us"}
             className="
   py-3 
   px-6
@@ -286,7 +286,7 @@ export default function Home() {
       </main>
 
       <Element name="services">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
           <h1>
             <WordPullUpDemo />
           </h1>
@@ -295,10 +295,10 @@ export default function Home() {
           </p>
 
           <div className="md:text-center py-2 md:w-1/5 mx-auto text-xl md:text-xl rounded-lg bg-black text-white">
-            <a href="#">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 ">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -321,12 +321,12 @@ export default function Home() {
         </div>
       </Element>
 
-      <section className="py-20">
+      <section className="velocity py-8 my-16 bg-[#171717]">
         <ScrollBasedVelocityDemo />
       </section>
 
       <Element name="process">
-        <main className="md:px-0 mx-6 md:mx-auto">
+        <main className="md:px-0 mx-6 md:mx-auto my-14">
           <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
             Our{" "}
             <span className="text-blue-600 flex gap-x-1 items-center">
@@ -406,7 +406,7 @@ export default function Home() {
         <ShootingStarsAndStarsBackgroundDemo />
       </Element>
 
-      <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+      <section id="contact-us" className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
         <LetsMakeThingsHappenSection />
       </section>
 
