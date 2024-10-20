@@ -70,7 +70,7 @@ export default function Home() {
         name="top"
         className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
    xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
-   justify-between py-6 px-4 md:px-8 mx-6"
+   justify-between py-3 px-4 md:px-8 mx-6"
       >
         <Link href={"/"}>
           <Image
@@ -137,13 +137,13 @@ export default function Home() {
   duration-200
      hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
           >
-            Book a call
+            Contact Us
           </Link>
         </div>
       </Element>
 
       <main className="md:pb-10">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto my-44">
           <AnimatedShinyTextDemo />
 
           <h1>
@@ -157,7 +157,7 @@ export default function Home() {
             minutes
           </p>
 
-          <div
+          {/* <div
             className="
                  flex 
                   md:justify-center 
@@ -199,7 +199,7 @@ export default function Home() {
             >
               Showcase
             </Link>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
@@ -228,7 +228,7 @@ export default function Home() {
             </BoxReveal>
           </div>
 
-          <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
+          {/* <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
             <div className="md:w-2/5">
               <h1 className="text-2xl font-medium text-gray-600 w-4/5">
                 Trusted by fast moving brands worldwide
@@ -273,7 +273,7 @@ export default function Home() {
                 ]}
               />
             </section>
-          </div>
+          </div> */}
         </div>
       </main>
 
@@ -407,9 +407,9 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
+          {/* <p className="text-left  text-xl  text-gray-500">519-200-5000</p> */}
           <p className="text-left  text-xl  text-gray-500">
-            admin@Horizosoftware.ca
+            contact@horizon.marketing
           </p>
         </div>
 
