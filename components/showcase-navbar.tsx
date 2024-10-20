@@ -23,7 +23,7 @@ xl:w-4/5
     bg-white 
     flex 
     items-center
-    justify-between py-6
+    justify-between py-3
     px-4
     md:px-8
     mx-6
