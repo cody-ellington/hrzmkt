@@ -16,6 +16,7 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
+import { BlurFadeDemo } from "@/components/demos/blur-fade-demo";
 
 
 const services = [
@@ -151,7 +152,7 @@ export default function Home() {
       </Element>
 
       <main className="md:pb-10">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto my-44">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto py-60">
           <AnimatedShinyTextDemo />
 
           <h1>
@@ -285,8 +286,38 @@ export default function Home() {
         </div>
       </main>
 
+      <section>
+        <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
+          <Image
+            src={"/images/desk-item.png"}
+            width={10000}
+            height={10000}
+            className=" md:w-1/3 rounded-md"
+            alt="image"
+          />
+          <div className="flex flex-col gap-y-5 md:w-1/2">
+            <h1 className="text-4xl">BRAND STORY HERE</h1>
+            <div className="text-lg md:text-xl ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat elit ut massa blandit, et condimentum purus ultricies. Maecenas ornare tellus eget volutpat consequat. Donec auctor turpis at turpis placerat suscipit. Phasellus sed dictum justo. Aenean eget lorem eget metusa pretium vehicuvehicula ac in tortor. Donec dui libero, pretium quis mauris nec, egestas rhoncus enim
+            </div>
+            {/* <div className="flex items-center gap-x-1">
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+              <IconStarFilled className="text-4xl text-yellow-500" />
+            </div> */}
+
+            {/* <span className="text-xl font-medium">
+              Jordan, Brisson <br />
+              CEO, Atlas Massage
+            </span> */}
+          </div>
+        </main>
+      </section>
+
       <Element name="services">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-32">
           <h1>
             <WordPullUpDemo />
           </h1>
@@ -326,7 +357,7 @@ export default function Home() {
       </section>
 
       <Element name="process">
-        <main className="md:px-0 mx-6 md:mx-auto my-14">
+        <main className="md:px-0 mx-6 md:mx-auto">
           <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
             Our{" "}
             <span className="text-blue-600 flex gap-x-1 items-center">
@@ -370,37 +401,11 @@ export default function Home() {
         </main>
       </Element>
 
-      <section>
-        <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
-          <Image
-            src={"/logo/black-long.png"}
-            width={10000}
-            height={10000}
-            className=" md:w-1/3 rounded-md"
-            alt="image"
-          />
-          <div className="flex flex-col gap-y-5 md:w-1/2">
-            <h1 className="text-lg md:text-2xl ">
-              &quot;We&apos;ve been working with Horizo for over 2 years and
-              they&apos;ve been amazing to work with. They&apos;ve helped us
-              grow our business and we couldn&apos;t be happier with the
-              results. &quot;
-            </h1>
-            <div className="flex items-center gap-x-1">
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-            </div>
-
-            <span className="text-xl font-medium">
-              Jordan, Brisson <br />
-              CEO, Atlas Massage
-            </span>
-          </div>
-        </main>
+      <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+        <BlurFadeDemo />
       </section>
+
+
 
       <Element name="guarentees">
         <ShootingStarsAndStarsBackgroundDemo />
