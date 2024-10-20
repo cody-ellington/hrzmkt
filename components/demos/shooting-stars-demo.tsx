@@ -72,7 +72,7 @@ export function ShootingStarsAndStarsBackgroundDemo() {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col   p-10 bg-neutral-800 rounded-xl cursor-pointer"
+            className="flex flex-col   p-10  rounded-xl cursor-pointer bg-white/10"
           >
             <button
               className="

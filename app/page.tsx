@@ -77,7 +77,7 @@ export default function Home() {
       <Element
         name="top"
         className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-   xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
+   xl:w-4/5 2xl:w-[68%] backdrop-blur-xl flex items-center 
    justify-between py-3 px-4 md:px-8 mx-6"
       >
         <Link href={"/"}>
@@ -132,11 +132,11 @@ export default function Home() {
           <Link
             href={"#contact-us"}
             className="
-  py-3 
+  py-1 
   px-6
   text-lg 
   hover:bg-[#abcbff]
-  rounded-[6px]
+  rounded-3xl
   border-2
   border-black
   text-white
@@ -294,7 +294,7 @@ export default function Home() {
             All of our services are designed to help your business stand out
           </p>
 
-          <div className="md:text-center py-2 md:w-1/5 mx-auto text-xl md:text-xl rounded-lg bg-black text-white">
+          <div className="md:text-center py-1 md:w-1/6 mx-auto text-xl md:text-xl rounded-3xl bg-black text-white">
             <a href="#contact-us">Contact Us</a>
           </div>
 
