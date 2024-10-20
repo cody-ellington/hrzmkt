@@ -352,7 +352,7 @@ export default function Home() {
         </div>
       </Element>
 
-      <section className="velocity py-8 my-16 bg-[#171717]">
+      <section className="velocity py-8 my-16">
         <ScrollBasedVelocityDemo />
       </section>
 
