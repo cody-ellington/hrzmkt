@@ -38,22 +38,22 @@ const features = [
     description: "Track your progress with our built in analytics",
   },
 
-  {
-    icon: "/icons/flexible.svg",
-    title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
-  },
-  {
-    icon: "/icons/support.svg",
-    title: "24/7 Support",
-    description:
-      "We offer 24/7 support for all our clients. Call us for more information.",
-  },
-  {
-    icon: "/icons/money.svg",
-    title: "Affordable Pricing",
-    description: "Affordable pricing for all our clients.",
-  },
+  // {
+  //   icon: "/icons/flexible.svg",
+  //   title: "Dynamic Websites",
+  //   description: "We build dynamic solutions that are easy to manage.",
+  // },
+  // {
+  //   icon: "/icons/support.svg",
+  //   title: "24/7 Support",
+  //   description:
+  //     "We offer 24/7 support for all our clients. Call us for more information.",
+  // },
+  // {
+  //   icon: "/icons/money.svg",
+  //   title: "Affordable Pricing",
+  //   description: "Affordable pricing for all our clients.",
+  // },
 ];
 
 export function ShootingStarsAndStarsBackgroundDemo() {

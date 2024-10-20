@@ -21,40 +21,48 @@ import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Web Design + Development",
+    title: "Website Development",
     description:
       "Take your business to the next level with our web design and development services",
+    subDes1:
+      "Shopify for E-commerce Website",
+    subDes2:
+      "Webflow for Branding Website",
   },
   {
     icon: "/images/s_1.png",
-    title: "Search Engine Optimization",
+    title: "Content Marketing",
     description:
       "Get your website to the top of search engine results with our SEO services",
+    subDes1:
+      "Social Media Content",
+    subDes2:
+      "Website Blog / SEO",
   },
-  {
-    icon: "/images/s_5.png",
-    title: "Content Creation",
-    description:
-      "Boost your brand's online presence with our social media marketing services",
-  },
-  {
-    icon: "/images/s_3.png",
-    title: "Social Media Marketing",
-    description:
-      "Interact with your customers and increase sales with our email marketing services",
-  },
-  {
-    icon: "/images/s_4.png",
-    title: "Email Marketing",
-    description:
-      "With our content creation services, we help businesses drive results",
-  },
-  {
-    icon: "/images/s_2.png",
-    title: "Pay-Per-Click Advertising",
-    description:
-      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
-  },
+  // {
+  //   icon: "/images/s_5.png",
+  //   title: "Content Creation",
+  //   description:
+  //     "Boost your brand's online presence with our social media marketing services",
+  // },
+  // {
+  //   icon: "/images/s_3.png",
+  //   title: "Social Media Marketing",
+  //   description:
+  //     "Interact with your customers and increase sales with our email marketing services",
+  // },
+  // {
+  //   icon: "/images/s_4.png",
+  //   title: "Email Marketing",
+  //   description:
+  //     "With our content creation services, we help businesses drive results",
+  // },
+  // {
+  //   icon: "/images/s_2.png",
+  //   title: "Pay-Per-Click Advertising",
+  //   description:
+  //     "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
+  // },
 ];
 
 export default function Home() {
@@ -84,14 +92,14 @@ export default function Home() {
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-orange-500">
+            <Link href={"/showcase"} className="hover:text-blue-600">
               Showcase
             </Link>
 
             <ScrollLink
               to="services"
               smooth={true}
-              className="hover:text-orange-500"
+              className="hover:text-blue-600"
             >
               Services
             </ScrollLink>
@@ -99,7 +107,7 @@ export default function Home() {
             <ScrollLink
               to="process"
               smooth={true}
-              className="hover:text-orange-500"
+              className="hover:text-blue-600"
             >
               Process
             </ScrollLink>
@@ -107,7 +115,7 @@ export default function Home() {
             <ScrollLink
               to="guarentees"
               smooth={true}
-              className="hover:text-orange-500"
+              className="hover:text-blue-600"
             >
               Guarentees
             </ScrollLink>
@@ -204,25 +212,25 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-orange-500" />
+                <PiCheckBold className="text-xl text-blue-600" />
                 Design
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-orange-500" />
+                <PiCheckBold className="text-xl text-blue-600" />
                 Development
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-orange-500" />
+                <PiCheckBold className="text-xl text-blue-600" />
                 Marketing
               </p>
             </BoxReveal>
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
               <p className="md:text-xl font-semibold flex gap-x-2 md:gap-x-4 items-center">
-                <PiCheckBold className="text-xl text-orange-500" />
+                <PiCheckBold className="text-xl text-blue-600" />
                 Strategy
               </p>
             </BoxReveal>
@@ -236,7 +244,7 @@ export default function Home() {
 
               <div className="flex my-6 gap-x-5 w-full">
                 <div>
-                  <h1 className="text-orange-500 text-3xl md:text-5xl">
+                  <h1 className="text-blue-600 text-3xl md:text-5xl">
                     <NumberTicker value={1000} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Happy Clients
@@ -247,7 +255,7 @@ export default function Home() {
                 <div className="w-px bg-gray-300 self-stretch"></div>
 
                 <div className="flex-1 min-w-0">
-                  <h1 className="text-orange-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
+                  <h1 className="text-blue-600 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
                     <NumberTicker value={100} /> +
                     <p className="text-gray-500 text-sm md:text-md">
                       Projects Completed
@@ -279,14 +287,18 @@ export default function Home() {
 
       <Element name="services">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
-        <h1>
-          <WordPullUpDemo />
-        </h1>
-        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-        All of our services are designed to help your business stand out 
-        </p>
+          <h1>
+            <WordPullUpDemo />
+          </h1>
+          <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+            All of our services are designed to help your business stand out
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+          <div className="md:text-center py-2 md:w-1/5 mx-auto text-xl md:text-xl rounded-lg bg-black text-white">
+            <a href="#">Contact Us</a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -301,6 +313,8 @@ export default function Home() {
                 />
                 <h1 className="text-xl font-medium">{service.title}</h1>
                 <p className="text-gray-500">{service.description}</p>
+                <p className="text-gray-500">{service.subDes1}</p>
+                <p className="text-gray-500">{service.subDes2}</p>
               </div>
             ))}
           </div>
@@ -313,9 +327,9 @@ export default function Home() {
 
       <Element name="process">
         <main className="md:px-0 mx-6 md:mx-auto">
-        <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
-        Our{" "}
-            <span className="text-orange-500 flex gap-x-1 items-center">
+          <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+            Our{" "}
+            <span className="text-blue-600 flex gap-x-1 items-center">
               {" "}
               <Image
                 src={"/icons/squiggle.svg"}
@@ -344,12 +358,12 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
-            <AnimatedBeamMultipleOutputDemo />
-          </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
-            <BoxRevealDemo />
-          </div>
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <AnimatedBeamMultipleOutputDemo />
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
+              <BoxRevealDemo />
+            </div>
 
           </div>
 
@@ -393,7 +407,7 @@ export default function Home() {
       </Element>
 
       <section className="my-10 md:py-20 xl:w-4/5 2xl:w-[68%] md:mx-auto">
-      <LetsMakeThingsHappenSection />
+        <LetsMakeThingsHappenSection />
       </section>
 
       <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
@@ -415,7 +429,7 @@ export default function Home() {
 
         <div className="flex md:justify-center gap-x-4 mt-10">
           © 2025 Horizo. All Rights Reserved.
-          <Link href="/" className="text-orange-500">
+          <Link href="/" className="text-blue-600">
             Privacy Policy
           </Link>
         </div>
