@@ -45,28 +45,26 @@ xl:w-4/5
           <Link
             href="/showcase"
             className="
-          hover:text-blue-500
+          hover:text-blue-700
           "
           >
+            Home
+          </Link>
+          <Link href="/" className="hover:text-blue-700">
             Showcase
           </Link>
-          <Link href="/" className="hover:text-blue-500">
-            Services
-          </Link>
-          <Link href="/" className="hover:text-blue-500">
+          {/* <Link href="/" className="hover:text-blue-700">
             Process
           </Link>
-          <Link href="/" className="hover:text-blue-500">
+          <Link href="/" className="hover:text-blue-700">
             Guarentees
-          </Link>
+          </Link> */}
 
         </div>
       </div>
 
 
       <div className="flex items-center gap-x-4">
-
-
 
         <Link
           href={"/meeting"}
