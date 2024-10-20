@@ -93,7 +93,7 @@ export default function Home() {
 
         <div className="absolute right-1/2 translate-x-1/2 transform">
           <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-blue-600">
+            <Link href={"#showcase"} className="hover:text-blue-600">
               Showcase
             </Link>
 
@@ -401,7 +401,7 @@ export default function Home() {
         </main>
       </Element>
 
-      <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+      <section id="showcase" className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
         <BlurFadeDemo />
       </section>
 
