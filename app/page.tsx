@@ -22,30 +22,34 @@ import { BlurFadeDemo } from "@/components/demos/blur-fade-demo";
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Website Development",
+    title: "E-commerce Website",
     description:
       "Take your business to the next level with our web design and development services",
     subDes1:
-      "Shopify for E-commerce Website",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
     subDes2:
-      "Webflow for Branding Website",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
   },
   {
     icon: "/images/s_1.png",
-    title: "Content Marketing",
+    title: "Branding Website",
     description:
       "Get your website to the top of search engine results with our SEO services",
     subDes1:
-      "Social Media Content",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
     subDes2:
-      "Website Blog / SEO",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
   },
-  // {
-  //   icon: "/images/s_5.png",
-  //   title: "Content Creation",
-  //   description:
-  //     "Boost your brand's online presence with our social media marketing services",
-  // },
+  {
+    icon: "/images/s_5.png",
+    title: "Content Marketing",
+    description:
+      "Boost your brand's online presence with our social media marketing services",
+    subDes1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
+    subDes2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non neque pellentesque, sodales quam vitae, consequat lectus. Aliquam vel facilisis dui. Etiam vel ornare neque, eget imperdiet sapien",
+  },
   // {
   //   icon: "/images/s_3.png",
   //   title: "Social Media Marketing",
@@ -151,8 +155,9 @@ export default function Home() {
         </div>
       </Element>
 
+      {/* HERO SECTION */}
       <main className="md:pb-10">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto py-60">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto py-32">
           <AnimatedShinyTextDemo />
 
           <h1>
@@ -165,50 +170,6 @@ export default function Home() {
             Schedule a call with us to discuss your project and get a quote in
             minutes
           </p>
-
-          {/* <div
-            className="
-                 flex 
-                  md:justify-center 
-                  items-center 
-                  gap-x-4
-                   "
-          >
-            <Link
-              href="/meeting"
-              className="py-3 
-            px-10
-            md:px-16
-      md:text-xl
-      hover:bg-[#abcbff] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-       bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-            >
-              Book a Call
-            </Link>
-            <Link
-              href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
-            >
-              Showcase
-            </Link>
-          </div> */}
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
@@ -236,86 +197,23 @@ export default function Home() {
               </p>
             </BoxReveal>
           </div>
-
-          {/* <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
-            <div className="md:w-2/5">
-              <h1 className="text-2xl font-medium text-gray-600 w-4/5">
-                Trusted by fast moving brands worldwide
-              </h1>
-
-              <div className="flex my-6 gap-x-5 w-full">
-                <div>
-                  <h1 className="text-blue-600 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Happy Clients
-                    </p>
-                  </h1>
-                </div>
-
-                <div className="w-px bg-gray-300 self-stretch"></div>
-
-                <div className="flex-1 min-w-0">
-                  <h1 className="text-blue-600 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Projects Completed
-                    </p>
-                  </h1>
-                </div>
-              </div>
-            </div>
-
-            <section className="overflow-hidden mt-10 md:w-4/5">
-              <InfiniteMovingLogos
-                speed="slow"
-                direction="left"
-                items={[
-                  {
-                    logo: "/logo/black-long.png",
-                    name: "Logo",
-                  },
-                  {
-                    logo: "/logo/black-long.png",
-                    name: "Logo",
-                  },
-                ]}
-              />
-            </section>
-          </div> */}
         </div>
       </main>
 
+      {/* BRAND STORY */}
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
-            src={"/images/desk-item.png"}
+            src={"/images/bone_banner.png"}
             width={10000}
             height={10000}
-            className=" md:w-1/3 rounded-md"
+            className="rounded-md"
             alt="image"
           />
-          <div className="flex flex-col gap-y-5 md:w-1/2">
-            <h1 className="text-4xl">BRAND STORY HERE</h1>
-            <div className="text-lg md:text-xl ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat elit ut massa blandit, et condimentum purus ultricies. Maecenas ornare tellus eget volutpat consequat. Donec auctor turpis at turpis placerat suscipit. Phasellus sed dictum justo. Aenean eget lorem eget metusa pretium vehicuvehicula ac in tortor. Donec dui libero, pretium quis mauris nec, egestas rhoncus enim
-            </div>
-            {/* <div className="flex items-center gap-x-1">
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-              <IconStarFilled className="text-4xl text-yellow-500" />
-            </div> */}
-
-            {/* <span className="text-xl font-medium">
-              Jordan, Brisson <br />
-              CEO, Atlas Massage
-            </span> */}
-          </div>
         </main>
       </section>
 
+      {/* SERVICES SECTION */}
       <Element name="services">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-32">
           <h1>
@@ -325,11 +223,7 @@ export default function Home() {
             All of our services are designed to help your business stand out
           </p>
 
-          <div className="md:text-center py-1 md:w-1/6 mx-auto text-xl md:text-xl rounded-3xl bg-black text-white">
-            <a href="#contact-us">Contact Us</a>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -346,16 +240,22 @@ export default function Home() {
                 <p className="text-gray-500">{service.description}</p>
                 <p className="text-gray-500">{service.subDes1}</p>
                 <p className="text-gray-500">{service.subDes2}</p>
+
+                <div className="md:text-center py-1 md:w-1/3 mx-auto rounded-3xl bg-black text-white">
+                  <a className="py-3" href="#contact-us">Contact Us</a>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </Element>
 
-      <section className="py-8 my-16">
+      {/* SCROLLING SECTION */}
+      <section id="showcase" className="py-8 my-16">
         <ScrollBasedVelocityDemo />
       </section>
 
+      {/* SHOWCASE SECTION */}
       <Element name="process">
         <main className="md:px-0 mx-6 md:mx-auto">
           <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
@@ -388,20 +288,10 @@ export default function Home() {
             noticed.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 mx-auto">
-            <div className="w-full md:w-1/2 order-2 md:order-1">
-              <AnimatedBeamMultipleOutputDemo />
-            </div>
-            <div className="w-full md:w-1/2 order-1 md:order-2 md:ml-0">
-              <BoxRevealDemo />
-            </div>
-
-          </div>
-
         </main>
       </Element>
 
-      <section id="showcase" className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
+      <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
         <BlurFadeDemo />
       </section>
 
@@ -415,8 +305,8 @@ export default function Home() {
         <LetsMakeThingsHappenSection />
       </section>
 
-      <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
-        <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
+      <footer className="bg-[#fafafa] py-10 text-center px-6 md:px-0 md:mx-auto border-t">
+        <div className="flex flex-col gap-y-3 items-center xl:w-4/5 2xl:w-[68%] mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium ">
             <Image
               src={"/logo/black-long.png"}
@@ -426,17 +316,14 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          {/* <p className="text-left  text-xl  text-gray-500">519-200-5000</p> */}
-          <p className="text-left  text-xl  text-gray-500">
+          <p className="text-left text-xl text-gray-500">Lorem ipsum dolor sit amet</p>
+          <p className="text-left text-sm text-gray-500">
             contact@horizon.marketing
           </p>
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
           © 2025 Horizo. All Rights Reserved.
-          <Link href="/" className="text-blue-600">
-            Privacy Policy
-          </Link>
         </div>
       </footer>
     </div>
