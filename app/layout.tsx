@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-const font = Space_Grotesk({ subsets: ["latin"] });
+const font = Poppins({
+  subsets: ["latin"],
+  weight: "500"
+});
 
 export const metadata: Metadata = {
   title: "Horizo | Marketing Agency",
@@ -26,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body>
 
         {children}

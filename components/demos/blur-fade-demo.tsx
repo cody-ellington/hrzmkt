@@ -1,6 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Image from "next/image";
 import Link from "next/link";
+import Meteors from "../ui/meteors";
 
 const works = [
   {
@@ -38,20 +39,19 @@ const works = [
     subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     link: "https://themes.shopify.com/themes/viola/styles/pure/preview",
   },
-
-
 ];
 
 export function BlurFadeDemo() {
   return (
     <section id="photos">
+      <Meteors number={30} />
       <div className="grid md:grid-cols-3 gap-8 mt-10 justify-items-center">
         {works.map(({ imageUrl, title, subTitle, link }, idx) => (
           <BlurFade
             key={title}
             delay={0.25 + idx * 0.05}
             inView
-            className={`rounded-lg ${works[idx].background} p-4`}
+            className={`rounded-lg p-4 backdrop-filter backdrop-blur-xl bg-opacity-10 border border-gray-100`}
           >
             <Link href={link} target="_blank" rel="noreferrer">
               <Image
@@ -59,13 +59,12 @@ export function BlurFadeDemo() {
                 width={10000}
                 className="
                 h-5/6 w-full object-cover rounded-lg"
-        
-              
-       
                 src={imageUrl}
                 alt={`Random stock image ${idx + 1}`}
               />
-              <h3 className="text-lg font-semibold mt-3 text-center">{title}</h3>
+              <h3 className="text-lg font-semibold mt-3 text-center">
+                {title}
+              </h3>
               <div className=" text-center">{subTitle}</div>
             </Link>
           </BlurFade>
